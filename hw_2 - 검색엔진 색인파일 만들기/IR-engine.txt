@@ -1,0 +1,46 @@
+아래 과정으로 forward/backward indexing으로 색인 및 검색 기능을 구현하시오.
+
+- 색인 및 검색 대상 파일 -- 623개 텍스트 파일(첨부파일)
+- 텍스트 파일 목록 -- fnames.txt(첨부파일)
+
+1. Forward indexing 과정
+
+1) 각 텍스트 파일들로부터 색인어 추출
+
+   C> index2018.exe <input-file> <output-file>
+
+2) 색인어 추출 결과를 아래 형태로 저장
+
+   DID: <term, freq> <term, freq> ... <term, freq>
+
+   참고 1. 빈도계산 -- wordcount.exe를 사용하면 편리함.
+   참고 2. DID는 fnames.txt를 이용하여 1부터 623으로 부여함.
+
+3) 전체 파일들에 대한 색인어(index term)들의 문서빈도(DF) 계산
+
+   각 파일들에 대해 unique 색인어 목록 추출
+   C> wordcount.exe -new -uniq <input.txt> <output.txt>
+
+   모든 파일에 대한 unique 색인어 추출 결과를 1개 파일로 만들어서
+   아래와 같이 wordcount.exe를 이용하여 DF를 계산하면 편리함.
+
+   C> wordcount.exe -new <input.txt> <output.txt>
+
+4) 각 색인어들에 대한 문서빈도 계산
+
+   각 색인어들을 1부터 n까지 정수값(TID: Term ID)으로 출력하고,
+   <TID, DF> table 구성
+
+2. Backward indexing -- 역색인 파일(inverted file) 구성
+
+   각 색인어들에 대해 <문서번호, 가중치> 리스트 구성
+
+   TID: <did, 가중치> ... <did, 가중치>
+
+   가중치 계산 -- TF / log(N/DF)
+
+3. Term table과 posting file 구성
+
+4. 단일 질어어에 대한 검색 모듈 작성
+
+5. 2개 이상의 질의어에 대한 검색 모듈 작성

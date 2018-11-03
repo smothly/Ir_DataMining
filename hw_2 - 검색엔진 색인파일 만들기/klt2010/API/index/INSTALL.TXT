@@ -1,0 +1,50 @@
+형태소 분석 라이브러리 및 테스트용 실행파일 설치 방법
+
+    1) hamAPI-v611.tar.gz
+       형태소 분석 사전, 인터페이스 관련 파일들
+
+    2) libindexEXE-v611-XXX.tar.gz
+       실행 파일 -- index.exe, indexT.exe, ...
+
+    3) libindexLIB-v611-XXX.tar.gz
+       라이브러리 파일 -- libindex.a
+
+아래와 같은 순서대로 테스트해 주세요.
+
+1. 압축파일 hamAPI-v611.tar.gz
+   (압축을 풀면 hamAPI 라는 디렉토리에 관련 파일들이 설치됨)
+
+   - hamAPI/exe/  -- 사전(hdic/*.dic) 등 실행에 필요한 파일들
+   - hamAPI/work/ -- 라이브러리를 이용하여 실행 파일 생성에 필요한 파일들
+ 
+2. 압축파일 libindexEXE-v611-XXX.tar.gz 의 실행파일(index.exe, indexT.exe 등)은
+   hamAPI/exe/ 디렉토리에 설치되도록 압축을 해제.
+   실행파일이 hamAPI/exe/에 설치되었으면 아래와 같이 실행되는지 확인.
+   (hamAPI/exe/에서 실행 --> 다른 디렉토리에서는 사전을 찾지 못해 실행 안됨)
+ 
+       $ index t1.txt --> 실행파일 index가 잘 작동하는지 확인
+           (입력파일 t1.txt는 hamAPI/exe/t1.txt 에 있음)
+
+3. 압축파일 libindexLIB-v611-XXX.tar.gz에 있는 라이브러리 libindex.a은
+   hamAPI/work/ 디렉토리에 설치되도록 압축 해제.
+
+   라이브러리 파일을 설치했으면, hamAPI/work/ 에서 아래와 같이 make를 실행.
+   (hamAPI/work/Makefile은 index라는 실행파일을 만드는 예제, 즉
+    형태소 분석 라이브러리 libindex.a를 이용하여 index라는 실행파일 생성 예)
+    hamAPI/work/src/index.c를 보면 라이브러리 사용법을 알 수 있으며,
+    예전버전과 거의 동일함)
+ 
+        $ make
+ 
+<참고> 형태소 분석기를 사용하려면 반드시 아래 파일들이 있어야 함.
+ 
+ 1. 실행파일 -- index.exe(또는 indexT.exe, indexQ.exe)
+   
+ 2. 사전파일 -- hdic/ham2000.ini, hdic/*.dic
+    <참고> hdic/*.* 는 실행파일이 있는 디렉토리에 있어야 하며,
+     hdic을 다른 곳으로 이동하려면 hdic/ham2000.ini에서 경로를 지정. 
+
+ 3. 윈도용 형태소 분석기는 반드시 DOS창에서 실행하여야 함.
+
+
+    2003년 10월 27일 국민대학교 컴퓨터학부 강승식 sskang@kookmin.ac.kr

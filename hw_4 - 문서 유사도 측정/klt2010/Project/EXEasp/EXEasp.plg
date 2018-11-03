@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EXEasp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\sskang\LOCALS~1\Temp\RSP5F.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/EXEasp.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\sskang\C\RELEASE\KLT2010-TestVersion\API\index\src-Test\asp-test.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\sskang\LOCALS~1\Temp\RSP5F.tmp" 
+Creating temporary file "C:\DOCUME~1\sskang\LOCALS~1\Temp\RSP60.tmp" with contents
+[
+../../EXE/KLT2000-TEST.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/asp.pdb" /machine:I386 /out:"../../EXE/asp.exe" 
+".\Release\asp-test.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\sskang\LOCALS~1\Temp\RSP60.tmp"
+<h3>Output Window</h3>
+Compiling...
+asp-test.c
+G:\sskang\C\RELEASE\KLT2010-TestVersion\API\index\src-Test\asp-test.c(138) : warning C4101: 'term' : unreferenced local variable
+G:\sskang\C\RELEASE\KLT2010-TestVersion\API\index\src-Test\asp-test.c(137) : warning C4101: 'n' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+asp.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

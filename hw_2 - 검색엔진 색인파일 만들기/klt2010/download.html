@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>형태소 분석기 KLT version 2.3.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ksc5601" />
+<meta http-equiv="imagetoolbar" content="no" />
+</head>
+<body bgcolor="#ffffff">
+
+<hr size=1>
+<h3><center>한국어 분석 모듈 KLT version 2.3.0</center></h3>
+<hr size=1>
+<dl>
+<dt>이름
+<dd>한국어 형태소 분석, 자동색인(색인어 추출), 한글 맞춤법 검사/교정, 복합명사 분해, 한글 자동 띄어쓰기 프로그램<p>
+<dt>개요
+<dd>한국어 분석기 실행파일 및 라이브러리의 사용조건<p>
+<pre>
+아래 각 항목에서 "소프트웨어"라 함은 압축파일에 포함되어 있는 파일의 전부
+혹은 일부를 모두 포함하며 압축파일에 포함되어 있는 LICENSE.TXT의 모든 내용에
+동의하는 경우에만 사용할 수 있습니다. LICENSE.TXT를 요약하면 아래와 같습니다.
+
+<font color=blue>
+1. "소프트웨어"는 개인적인 연구 또는 실험의 목적으로만 사용하며, 상품화 등 영리적인
+   목적으로 사용하지 않는다.
+
+1. 연구과제를 수행하기 위한 목적으로 사용할 경우 참여인력 3인 이내의 소규모의
+   단일 연구과제에 사용할 수 있으며, 그 이상인 경우 저작권자의 허가를 득하여야 한다.
+</font color=black>
+1. "소프트웨어"를 사용한 결과로 작성된 논문이나 각종 문서에는 반드시
+   "소프트웨어"의 이름, 저작권자, 출처 등을 명확히 명시하여야 한다.
+
+1. "소프트웨어"의 전부 또는 일부를 불특정 다수에게 판매, 배포, 제공하지 않는다.
+
+1. "소프트웨어"의 전부 또는 일부, "소프트웨어"를 이용하여 개발된 소프트웨어를
+   인터넷 홈페이지 등 불특정 다수가 접근할 수 있는 형태로 사용하지 않는다.
+
+1. "소프트웨어"를 유효기간 동안 혹은 유효기간 이후에 사용함으로 인하여
+   발생하는 어떠한 손해에 대해서도 "소프트웨어" 저작권자는 책임을 지지 않는다.
+
+1. "소프트웨어"를 사용함에 있어 저작권자에게 손해를 끼치거나 저작권자에게 유해한
+   영향을 끼칠 가능성이 있다고 판단되는 목적으로 사용하지 않는다.
+
+1. "소프트웨어"는 2012년 12월까지만 사용할 수 있으며, 그 이후에는 사용하지 않는다.
+   "소프트웨어"의 사용이 끝난 이후에는 제3자가 해독할 수 없는 상태로 폐기한다.
+
+1. "소프트웨어"를 사용함으로 인하여 발생하는 제반 문제에 대해 "소프트웨어"의
+   사용자는 모든 책임을 진다.  
+
+위 내용은 LICENSE.TXT를 요약한 것이며, 압축파일에 포함되어 있는 LICENSE.TXT의
+모든 내용에 동의하는 경우에만 "소프트웨어"를 사용할 수 있습니다.
+
+           2012년 2월 1일 강승식
+
+Email: nlpkang(메일서버는 gmail닷컴) Phone:+82-10-9929-4800
+</pre>
+
+<dt>한국어 형태소 분석(색인어 추출) -- <font color=red>KLT version 2.3.0 (2012년 2월 1일)</font>
+<p>
+<font color=blue>
+<ul>
+<li> <font color=red>[Down 가능]</font> <A href="../../down/KLT/ver220/KLT2010-TestVersion.zip">윈도 및 리눅스32비트용</A>
+<li> 압축파일에 포함되어 있는 <A href="http://nlp.kookmin.ac.kr/down/KLT/ver220/README.html">README.TXT</A>를 꼭 읽으세요.(구버전 라이브러리를 교체할 경우에, 반드시 header/runmode.h를 교체하고 실행파일을 다시 만들어야 함)
+</ul>
+</font>
+
+<p>
+<dd> 
+<font color=red>
+<li> 연구용 형태소 분석기는 윈도용만 제공합니다. 리눅스/유닉스용이 필요하면 아래 연락처로 문의하기 바람.
+<li> Sun Solaris, HP Unix, IBM AIX, Free BSD, Digital Unix 등 기타 플랫폼에 대한 연구용 버전은 제공하지 않으며, 정식 사용권을 얻어야 합니다.<p>
+</font color=black>
+<li> 특징 1. 분석 정확도가 매우 높아졌음 -- 특히, 미등록어, 고유명사 등
+<li> 특징 2. 추출되는 용어의 개수가 줄었음 -- 불필요한 용어 추출 방지
+<p>
+<li> 실행방법(리눅스, 유닉스 계열) -- "$ index -2 inputfile.txt", "$ indexT -2 inputfile.txt", OR "$ index -2"(표준 입출력)
+<li> 실행방법(윈도용) -- 1) indexWin.exe(윈도창) 2) DOS창에서 "C> index -2 inputfile.txt"(linux/unix용과 동일)
+<font color=red>
+<li> linux에서는 압축파일의 API라는 디렉토리에서 make하면 EXE 디렉토리에 실행파일이 생성됩니다.
+<li> KLT version 2.3.0는 연구 및 실험용으로 2012년 12월까지만 사용할 수 있으며, 분석결과에 대한 기능상의 제약이 있을 수 있습니다.(어떤 경우에도 저작권자의 허락없이는 직접 혹은 간접적으로 상업적인 목적으로 활용할 수 없습니다)
+</font>
+</dl>
+
+<p>
+<dt>한국어 구문분석기 - Test version
+<ul> 
+<li> <font color=red>[Down 가능]</font> <A href="../../down/HAM/ver500a/KoreanParser-sskang.zip">윈도95/98/NT/2000용</A>
+</ul>
+
+<p>
+<dt>한글 맞춤법 검사기 - Test version
+<ul> 
+<li> <font color=red>[Down 가능]</font> <A href="../../down/HAM/ver500a/ham-v500a-spell-Windows.zip">윈도95/98/NT/2000용</A>
+</ul>
+<p>
+<hr size=1>
+<a href="../../">홈페이지</a>로 돌아가기
+<p>
+</body>
+<address>
+This home page was last updated on 2012-02-01<br>
+</address>
+</html>

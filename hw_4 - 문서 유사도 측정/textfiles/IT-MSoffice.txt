@@ -1,0 +1,26 @@
+MS ¿ÀÇÇ½º ¹®¼­ Æ÷¸Ë '±¹Á¦Ç¥ÁØ' 
+ 
+¡¡¸¶ÀÌÅ©·Î¼ÒÇÁÆ®(MS)ÀÇ ¿ÀÇÇ½º ¹®¼­ Æ÷¸ËÀÌ ±¹Á¦Ç¥ÁØÀ¸·Î ½ÂÀÎµÆ´Ù°í C³ÝÀÌ ÃÖ±Ù º¸µµÇß´Ù.Éü
+
+¡¡ MS °ü°èÀÚ¿¡ µû¸£¸é MSÀÇ ¡®¿ÀÇÇ½º ¿ÀÇÂ XML¡¯ Æ÷¸ËÀº ½ºÀ§½º Ãë¸®È÷¿¡ ÀÖ´Â À¯·´ÀÇ Ç¥ÁØÈ­ ´ÜÃ¼ÀÎ ¡®ECMA ÀÎÅÍ³»¼Å³Î¡¯ÀÇ ÃÑÈ¸¿¡¼­ ±¹Á¦Ç¥ÁØÀ¸·Î ½ÂÀÎµÆ´Ù.
+
+¡¡ECMAÀÇ Ç¥ÁØ ½ÂÀÎÀº ¡®¿ÀÇÇ½º ¿ÀÇÂ XML¡¯ Æ÷¸Ë Ç¥ÁØÈ­¸¦ °áÁ¤ÇÏ´Â ±â¼úÀ§¿øÈ¸°¡ ¾à 1³â µ¿¾È ³íÀÇÇÑ °á°ú´Ù.
+
+¡¡¡®¿ÀÇÇ½º ¿ÀÇÂ XML¡¯ Æ÷¸ËÀº MS°¡ Áö³­´Þ ¸» ±â¾÷°í°´¿¡ ÆÇ¸Å¸¦ ½ÃÀÛÇÑ ¡®¿ÀÇÇ½º2007¡¯ÀÇ ±âº» ¹®¼­ Æ÷¸Ë·Î ³»³â 1¿ùºÎÅÍ ÀÏ¹Ý ¼ÒºñÀÚµé¿¡°Ôµµ ½ÃÆÇµÈ´Ù.
+
+¡¡ ÇÑÆí ³ëº§Àº ÀÚ»çÀÇ ¿ÀÇÂ¼Ò½º ±â¹Ý ¿ÀÇÇ½º Á¦Ç°ÀÎ ¡®¿ÀÇÂ¿ÀÇÇ½º¡¯¿¡¼­ ¡®¿ÀÇÇ½º ¿ÀÇÂ XML¡¯ Æ÷¸ËÀ» Áö¿øÇÒ °èÈ¹ÀÌ´Ù. ÄÚ·¼Àº µ¿Á¾ SWÀÎ ¡®¿öµåÆÛÆåÆ®¡¯¿¡¼­ ¡®¿ÀÇÇ½º ¿ÀÇÂ XML¡¯°ú ÀÌ´Þ ÃÊ ISO Ç¥ÁØÀ¸·Î ½ÂÀÎµÈ ¡®¿ÀÇÂ µµÅ¥¸ÕÆ® Æ÷¸Ë(ODF)¡¯À» ¸ðµÎ Áö¿øÇÑ´Ù. 
+
+¡¡¹Ý¸é ODF¸¦ ÁöÁöÇØ ¿Â IBMÀº MSÀÇ ¡®¿ÀÇÇ½º ¿ÀÇÂ XML¡¯À» Ç¥ÁØÀ¸·Î ¸¸µå´Â µ¥ ¹Ý´ëÇ¥¸¦ ´øÁ³´Ù.  
+ 
+ 
+¡¡ÀÌ °ü°èÀÚ´Â ¡°¡®ECMA ÀÎÅÍ³»¼Å³Î¡¯ÀÌ ºü¸¥ ÀýÂ÷¸¦ ÅëÇØ ¡®¿ÀÇÇ½º ¿ÀÇÂ XML¡¯ Æ÷¸ËÀ» ¡®±¹Á¦Ç¥ÁØÈ­±â±¸(ISO)¡¯¿¡ Ç¥ÁØÀ¸·Î Á¦¾ÈÇÏ´Â ¹®Á¦¿¡ ´ëÇØ¼­µµ Ç¥°áÀ» ½Ç½ÃÇß´Ù¡±°í ¹àÇû´Ù. 
+
+¡¡Àü¹®°¡µé¿¡ µû¸£¸é ISOÀÇ Ç¥ÁØÈ­ ÀýÂ÷´Â ´ë°³ ¾à 9°³¿ù °¡·®ÀÌ ¼Ò¿äµÈ´Ù.
+
+Á¤¼Ò¿µ±âÀÚ@ÀüÀÚ½Å¹®, syjung@etnews.co.kr 
+
+¡Û ½Å¹®°ÔÀçÀÏÀÚ : 2006/12/11      
+
+
+ 
+
